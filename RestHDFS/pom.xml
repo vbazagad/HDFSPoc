@@ -62,7 +62,7 @@
 					</resources> 
 					<dockerHost>https://192.168.99.100:2376</dockerHost>
 					
-				</configuration>
+				</configuration>   
 				<executions>
 					<execution>
 						<phase>package</phase>
