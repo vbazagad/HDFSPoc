@@ -12,7 +12,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class RestHDFSLauncher {
+public class RestHDFSLauncher extends SpringBootServletInitializer {
+ 
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(RestHDFSLauncher.class);
+    }
+ 
 
 	public static void main(String[] args) {
 		SpringApplication.run(RestHDFSLauncher.class, args);
